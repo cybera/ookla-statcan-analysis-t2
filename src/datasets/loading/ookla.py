@@ -56,8 +56,10 @@ def speed_data(paths=None):
     return df
 
 
-
+#Changed to ensure proper merge
 def canada_speed_tiles():
+    
+    Test = 1
 
     tiles = canada_tiles()
     tiles['quadkey'] = tiles['quadkey'].astype(int)
