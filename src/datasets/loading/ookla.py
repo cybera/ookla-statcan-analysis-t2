@@ -59,11 +59,9 @@ def speed_data(paths=None):
 
 #Changed to ensure proper merge
 def canada_speed_tiles():
-    
-    a = 1 #delete later
-
     tiles = canada_tiles()
     tiles['quadkey'] = tiles['quadkey'].astype(int)
     return tiles.merge(speed_data(), on='quadkey', validate='1:m')
 
     #return canada_tiles().merge(speed_data(), on='quadkey', validate='1:m')
+
